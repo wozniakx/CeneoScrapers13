@@ -3,19 +3,22 @@
 # etep1.1 pobranie skladowych pojedynczej opinii
 - pobranie kodu pojedynczej strony z opiniami o produkcie
 - wydobycie z kodu strony fragmentu odpowiadajaego pojedynczej opinii
-- zapisanie do pojedyncych 
+- zapisanie do pojedyncych zmiennych wartosci skladowych opinii
+- obsluga bledow
+- transformacja danych do docelowych typow
 
 |Składowa|Selektor CSS|Nazwa zmiennej|Typ danych|
-|Opinia||opinion|
-|Identyfikator opinii||opinionID|
-|Autor|||author|
-|Rekomendacja||rcmd|
-|Liczba gwiazdek||stars
-|Treść opinii||content
-|Lista zalet||pros
-|Lista wad||cons
-|Czy potwierdzona zakupem||purasched
-|Data wystawienia||publishDate
-|Data zakupu||purchaseDate
-|Dla ilu osob przydatna||usefull
-|Dla ilu osob nieprzydanta||useless
+|--------|------------|--------------|----------|
+|Opinia|div.js_product-review|opinion|bs4.element.Tag|
+|Identyfikator opinii|["data-entry-id"]|opinionId|str|
+|Autor|span.user-post__author-name|author|str|
+|Rekomendacja|span.user-post__author-recomendation > em|rcmd|bool|
+|Liczba gwiazdek|span.user-post__score-count|stars|float|
+|Treść opinii|div.user-post__text|content|str|
+|Lista zalet|div[class*="positives"] ~ div.review-feature__item|pros|list|
+|Lista wad|div[class*="negatives"] ~ div.review-feature__item|cons|list|
+|Czy potwierdzona zakupem|div.review-pz|purasched|bool|
+|Data wystawienia|span.user-post__published > time:nth-child(1)["datetime"]|publishDate|str|
+|Data zakupu|span.user-post__published > time:nth-child(2)["datetime"]|purchaseDate|str|
+|Dla ilu osob przydatna|span[id^="votes-yes"]|useful|int|
+|Dla ilu osob nieprzydanta|span[id^="votes-no"]|useless|int|
