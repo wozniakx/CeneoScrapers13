@@ -1,6 +1,5 @@
 # CeneoScrapers13
-# Etap1 pobranie opinii o produkcie
-# etep1.1 pobranie skladowych pojedynczej opinii
+# Etap1 Ekstrakcja pojedynczej opinii o produkcie
 - pobranie kodu pojedynczej strony z opiniami o produkcie
 - wydobycie z kodu strony fragmentu odpowiadajaego pojedynczej opinii
 - zapisanie do pojedyncych zmiennych wartosci skladowych opinii
@@ -22,3 +21,5 @@
 |Data zakupu|span.user-post__published > time:nth-child(2)["datetime"]|purchaseDate|str|
 |Dla ilu osob przydatna|span[id^="votes-yes"]|useful|int|
 |Dla ilu osob nieprzydanta|span[id^="votes-no"]|useless|int|
+
+## Etap 2 Ekstrakcja wszystkich opinii o produkcie
