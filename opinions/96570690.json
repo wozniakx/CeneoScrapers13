@@ -110,25 +110,6 @@
         "useless": 0
     },
     {
-        "opinionId": "13169951",
-        "author": "Użytkownik Ceneo",
-        "rcmd": true,
-        "stars": 4.0,
-        "content": "Nie wiem- został zakupiony jako prezent, który dopiero będzie wręczony.",
-        "pros": [
-            "czas pracy na baterii",
-            "funkcjonalność",
-            "łatwość obsługi",
-            "wygląd"
-        ],
-        "cons": [],
-        "purchased": true,
-        "publishDate": "2020-10-07 10:33:42",
-        "purchaseDate": "2020-09-29 10:05:21",
-        "useful": 0,
-        "useless": 6
-    },
-    {
         "opinionId": "13456710",
         "author": "w...g",
         "rcmd": true,
@@ -184,6 +165,25 @@
         "purchaseDate": "2020-12-03 22:21:46",
         "useful": 0,
         "useless": 0
+    },
+    {
+        "opinionId": "13169951",
+        "author": "Użytkownik Ceneo",
+        "rcmd": true,
+        "stars": 4.0,
+        "content": "Nie wiem- został zakupiony jako prezent, który dopiero będzie wręczony.",
+        "pros": [
+            "czas pracy na baterii",
+            "funkcjonalność",
+            "łatwość obsługi",
+            "wygląd"
+        ],
+        "cons": [],
+        "purchased": true,
+        "publishDate": "2020-10-07 10:33:42",
+        "purchaseDate": "2020-09-29 10:05:21",
+        "useful": 0,
+        "useless": 7
     },
     {
         "opinionId": "13814280",
@@ -252,7 +252,7 @@
         "purchased": true,
         "publishDate": "2020-12-27 16:57:34",
         "purchaseDate": "2020-11-25 23:03:40",
-        "useful": 2,
+        "useful": 3,
         "useless": 0
     },
     {
